@@ -1,0 +1,7 @@
+body{background-color: #add8e6; clear: both;}
+.navbar{ float: left; min-width: 140px; padding: 0 2% 0; margin: 56px 0 0; list-style: none;}
+.navbar li{ max-width: 300px; width: 82%; background-color: #fff; margin: 0 5% 9px; padding: 2% ;}
+.navbar li a{text-decoration: none; font-size: 16px; color:#a72925; text-align: left; border-bottom: 1px solid #fff;  }
+.navbar li a:hover{ border-bottom: 1px solid #a72925; }
+h1{color:#00008b; font-weight: bold; text-align: left; margin: 20px 0; font-family:sans-serif;}
+p{color:#00008b; text-align: left; line-height: 16px;}
