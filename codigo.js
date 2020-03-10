@@ -15,11 +15,20 @@ function validar(){
 		alert("Te faltan tus apellidos!!");
 		return false;
 	}
-	else if(correo.indexOf('@', 0) == -1 || correo.indexOf('.', 0) == -1) //me falta indicar que el carácter . se debe buscar DESPUÉS de la @
+	else if (correo.indexOf('@', 0) == -1 || correo.indexOf('.', 0) == -1) 
 	{
-            alert("El correo electrónico introducido no es correcto.");
-            return false;
-    }
+		if (correo.indexOf('@', 0) != -1)
+		{
+		    var aux = correo.substr(correo.indexOf('@', 0), (correo.length) - (correo.indexOf('@', 0)));
+		    if (aux.indexOf('.', 0) == -1)
+		    {
+			alert("Introducide un punto tras tu arroba");
+			return false;
+		    }
+		}
+		alert("El correo electrónico introducido no es correcto.");
+		return false;
+	}
     else if(pw.length < 8)
     {
     	if(pw=="")
